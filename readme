@@ -1,0 +1,196 @@
+	Python Cheatsheet
+=> What is Python?  
+- Python is a stand-alone programming language.  
+- It is easy to learn, with a simple and readable syntax.  
+- Python is versatile, allowing you to build almost anything.  
+
+=>Python Can Be Used For:  
+1. Web Applications- Frameworks like Flask, Django.  
+2. Applications - Libraries like Kivy.  
+3. Data Science - Libraries like NumPy, Pandas, Matplotlib, and Scikit-learn.  
+4. Machine Learning & Artificial Intelligence - TensorFlow, PyTorch.  
+5. Desktop Applications - Tkinter, PyQt.  
+6. Game Development - Pygame.  
+7. Automation & Scripting - Useful for repetitive tasks.  
+
+=>Basic Concepts  
+
+1. print()- Used to display output on the terminal.  
+   
+   print("Hello, World!")
+   
+
+2. input() - Used to take user input from the terminal.  
+  
+   name = input("Enter your name: ")
+   print(f"Hello, {name}")
+   
+
+3. Variables - Containers used to store data.  
+   Rules for Naming Variables:  
+   - No spaces in variable names (e.g., use `my_variable`, not `my variable`).  
+   - Must not use Python keywords (e.g., 'if', 'for', `while`).  
+   - Cannot start with a number or special characters (e.g., `1variable` is invalid).  
+	Data Types  
+
+1. Strings - Characters enclosed in quotation marks (`" "` or `' '`).  
+   Example: "Hello", 'Python'.  
+
+2. Integers - Numeric values without a decimal point.  
+   Example: 42, 100.  
+
+3. Floats - Numeric values with decimal points.  
+   Example: `3.14`, `0.99`.  
+
+4. Booleans - Represent `True` or `False`.  
+
+=> Data Structures  
+
+1. Lists  
+   - Used to store multiple items in a single variable.  
+   - Enclosed in square brackets: `[ ]`.  
+   - Mutable (can be changed).  
+   Example:  
+   fruits = ["apple", "banana", "cherry"]
+   fruits[0] = "orange"  # Changing an item
+   
+
+2. Tuples 
+   - Used to store multiple items in a single variable.  
+   - Enclosed in parentheses: `( )`.  
+   - Immutable(cannot be changed).  
+   Example:
+   coordinates = (10, 20, 30)
+
+
+3. Sets  
+   - Store unique items in curly braces: `{ }`.  
+   Example:
+   unique_numbers = {1, 2, 3, 4}
+
+
+4. Dictionaries 
+   - Store data in key-value pairs.  
+   - Enclosed in curly braces: `{key: value}`.  
+   Example:
+   student = {"name": "Alice", "age": 21}
+
+ => Operators  
+
+1. Arithmetic Operators 
+   - `+`, `-`, `*`, `/`, `%` (modulus), `**` (exponentiation), `//` (floor division).  
+
+2.Assignment Operators 
+   - `=` (assignment), `+=`, `-=`, `*=`, etc.  
+
+3. Comparison Operators 
+   - `>`, `<`, `>=`, `<=`, `==` (equal), `!=` (not equal).  
+
+4. Logical Operators
+   - `and`, `or`, `not`.  
+
+5. Membership Operators
+   - `in`, `not in` (check if an item exists in a sequence).  
+
+	Conditional Statements  
+
+Used to execute code based on conditions.  
+
+1. if Statement  
+   Executes a block of code if the condition is `True`.  
+   
+   if age >= 18:
+       print("You are an adult")
+   
+
+2. else Statement 
+   Executes a block of code if the condition is `False`.  
+
+3. elif (Else If) 
+   Used for multiple conditions with different outcomes.  
+
+4. Nested if Statements
+   `if` statements inside other `if` statements.  
+
+=> Loops  
+
+Used to perform repetitive tasks.  
+
+1. For Loops  
+   for i in range(5):
+       print(i)
+
+2. While Loops 
+   i = 0
+   while i < 5:
+       print(i)
+       i += 1
+   
+
+3. Control Statements:  
+   - `break`: Exit the loop early.  
+   - `continue`: Skip to the next iteration.  
+
+=> Functions  
+
+A block of reusable code that performs a specific task.  
+
+Syntax:  
+def function_name(parameters):
+     block of code
+    return output
+
+Example:  
+def add_numbers(a, b):
+    return a + b
+
+result = add_numbers(5, 3)
+print(result)  Output: 8
+
+=>Classes & Objects  
+
+Classes are blueprints for creating objects.  
+
+Syntax:  
+class Student:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+Creating an object
+student1 = Student("Alice", 21)
+print(student1.name)  Output: Alice
+
+Key Points:  
+- A class contains attributes (variables) and methods (functions).  
+- `__init__()` is a special method used to initialize attributes.  
+
+
+=>	Additional Points To Read  
+
+1. Modules & Libraries 
+   - Python comes with built-in modules like `math`, `random`.  
+   - You can install external libraries using `pip`.  
+
+2. Error Handling  
+   - Use `try...except` to handle exceptions.  
+	example
+   try:
+       result = 10 / 0
+   except ZeroDivisionError:
+       print("Cannot divide by zero!")
+
+
+3. File Handling 
+   - Open, read, write, and close files.  
+	example
+   with open("file.txt", "w") as file:
+       file.write("Hello, Python!")
+
+
+4. Python Comprehensions 
+   - Compact ways to create lists, dictionaries, etc.  
+   example
+   squares = [x**2 for x in range(10)]
+
+This covers most of the essential points about Python.
