@@ -1,18 +1,18 @@
 # 1.Take three inputs from a user, separately. Print the largest of the numbers.
-# num1=input('Enter First number:')
-# num2=input('Enter second number:')
-# num3=input('Enter third number:')
+num1=input('Enter First number:')
+num2=input('Enter second number:')
+num3=input('Enter third number:')
 
-# num1=int(num1)
-# num2=int(num2)
-# num3=int(num3)
+num1=int(num1)
+num2=int(num2)
+num3=int(num3)
 
-# if num1>num2 and num1>num3:
-#     print(f'{num1} is the largest')
-# elif num2>num1 and num2>num3:
-#     print(f'{num2} is the largest')
-# else:
-#     print(f'{num3} is the largest')
+if num1>num2 and num1>num3:
+    print(f'{num1} is the largest')
+elif num2>num1 and num2>num3:
+    print(f'{num2} is the largest')
+else:
+    print(f'{num3} is the largest')
 
 
 
